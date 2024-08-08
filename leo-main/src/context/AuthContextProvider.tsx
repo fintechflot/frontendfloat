@@ -70,7 +70,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const router = useRouter();
   const pathname = usePathname();
   // const { getThemeValues } = useTheme();
-  const getThemeValues="https://www.assistfin.com/assets/img/1711689897logo-removebg-preview%20(3).png";
+  const getThemeValues = "/public/src/logo.svg";
   const { coords } = useGeolocated({
     positionOptions: {
       enableHighAccuracy: false,
@@ -157,7 +157,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       });
       // * store the token in local storage
       localStorage.setItem('token', res.data.token);
-      toast.success('Logged In Successfully!');
+      // localStorage.setItem('client-id', res.data.id);
+      toast.success('Logged In Successfully by gaurav!');
       setFormStep(3);
       revalidateToken(res.data.token);
       setLoading(false);

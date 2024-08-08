@@ -12,6 +12,6 @@ axiosInstance.interceptors.request.use(config => {
       ? window.localStorage.getItem('clientId')
       : '';
   config.headers['auth-token'] = token ? token : '';
-  config.headers['clientId'] = clientId ? clientId : '';
+  config.headers['client-id'] = clientId ? clientId : '';
   return config;
 });

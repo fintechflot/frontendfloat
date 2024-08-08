@@ -65,7 +65,7 @@ const Sidebar = ({ children }: { children: ReactNode }) => {
   const { user, logout } = useAuth();
   const router = useRouter();
   // const { logoUrl } = useTheme();
-  const logoUrl  = 'https://www.assistfin.com/assets/img/1711689897logo-removebg-preview%20(3).png';
+  const logoUrl  = '/public/src/logo.svg';
 
   const [openBrandSwitcher, setOpenBrandSwitcher] = useState(false);
   const { clientsData, isFetchingClientsData } = useClients();

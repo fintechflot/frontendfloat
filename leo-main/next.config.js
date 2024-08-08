@@ -3,8 +3,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'www.assistfin.com',
+        protocol: 'http',
+        hostname: 'localhost:3001',
         // port: '', // Optional, include if needed
         // pathname: '/assets/img/**', // Optional, include if needed
       },

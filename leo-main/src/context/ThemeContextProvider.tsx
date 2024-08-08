@@ -29,7 +29,7 @@ export const useTheme = () => {
 export const ThemeContextProvider = ({ children }: { children: ReactNode }) => {
   const [primaryColor, setPrimaryColor] = useState(null);
   const [secondaryColor, setSecondaryColor] = useState(null);
-  const [logoUrl, setLogoUrl] = useState('https://www.assistfin.com/assets/img/1711689897logo-removebg-preview%20(3).png');
+  const [logoUrl, setLogoUrl] = useState('/public/src/logo.svg');
 
   const getThemeValues = async () => {
     const theme = await axiosInstance.get('/clients/get-client-theme');

@@ -95,7 +95,7 @@ export const useKpiCards = ({
     mutate: revalidateKpiCardsData,
     isLoading: isFetchingKpiCardsData,
   } = useSWR<KpiCardData[]>(url, fetcher);
-
+console.log(" kpiCardsData=", kpiCardsData)
   return {
     kpiCardsData,
     fetchKpiCardsDataError,
